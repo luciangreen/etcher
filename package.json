@@ -1,0 +1,10 @@
+{
+  "name": "etcher",
+  "version": "0.1.0",
+  "description": "Etcher: the Lucian Office vector editor, with drawings and flowcharts from text, approve-or-change questions and measured filters",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "license": "BSD-3-Clause"
+}

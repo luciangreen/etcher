@@ -1,0 +1,30 @@
+body { margin: 0; }
+.ebar { flex-wrap: wrap; gap: 8px; }
+.ebar .title { font: inherit; font-weight: 600; border: 1px solid transparent; background: transparent; padding: 4px 6px; min-width: 8em; }
+main.etcher { display: grid; grid-template-columns: minmax(0, 2.3fr) minmax(260px, 1fr); gap: 12px; padding: 12px; align-items: start; }
+.etcher .panel { margin: 0; min-width: 0; }
+.tools { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; margin-bottom: 8px; }
+.tools button.on { background: #dbe8ff; border-color: #3a7bd5; font-weight: 600; }
+.tools .sep { width: 1px; height: 22px; background: #8885; margin: 0 4px; }
+.tools label { display: flex; gap: 4px; align-items: center; font-size: .85em; }
+.tools input[type=color] { width: 32px; height: 26px; padding: 0; border: 1px solid #8886; }
+.canvaswrap { overflow: auto; border: 1px solid #8884; border-radius: 6px; background: #eceae4; }
+.canvas { touch-action: none; outline: none; }
+.canvas svg { display: block; width: auto; height: auto; max-width: 100%; max-height: 70vh; margin: 0 auto; background: #fff; }
+.canvas svg [data-id] { cursor: move; }
+.canvas.drawing svg, .canvas.drawing svg [data-id] { cursor: crosshair; }
+.caption { text-align: center; font-style: italic; color: #555; margin: 6px 0; min-height: 1.2em; }
+.question { border: 2px solid #e2a03f; border-radius: 8px; padding: 8px 10px; margin-bottom: 10px; background: #fff8ec; }
+.question:empty { display: none; }
+.question p { margin: 0 0 6px; }
+.question.ok { border-color: #2e9e6b; background: #eefaf3; }
+.tabs { display: flex; gap: 4px; flex-wrap: wrap; border-bottom: 1px solid #8884; margin-bottom: 8px; }
+.tabs button.on { font-weight: 600; border-bottom: 2px solid currentColor; }
+.side h3 { font-size: .95rem; margin: 10px 0 4px; }
+.side textarea { width: 100%; box-sizing: border-box; font: inherit; }
+.side label { display: block; margin: 4px 0; font-size: .9em; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.row input[type=text] { flex: 1; min-width: 0; }
+.measure { font-size: .9em; background: #f4f6fa; border-radius: 6px; padding: 6px 8px; }
+.say { margin-top: 10px; }
+@media (max-width: 860px) { main.etcher { grid-template-columns: 1fr; padding: 8px; } .ebar h1 { font-size: 1.1rem; } }
