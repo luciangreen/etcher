@@ -4,7 +4,8 @@
   "description": "Etcher: the Lucian Office vector editor, with drawings and flowcharts from text, approve-or-change questions and measured filters",
   "type": "module",
   "scripts": {
-    "test": "node --test test/*.test.js"
+    "test": "node --test test/*.test.js",
+    "ios": "node io/make-ios.mjs"
   },
   "license": "BSD-3-Clause"
 }
